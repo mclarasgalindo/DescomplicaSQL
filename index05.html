@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Agregadas</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <table border="0" width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h1>O que são?</h1>
+                <p>
+                    <div class="text-box">
+                        <p>As funções agregadas são usadas para realizar cálculos sobre um conjunto de valores e retornar apenas um resultado. 
+                            Normalmente, elas são aplicadas junto com a cláusula <b>GROUP BY</b>, que permite organizar os dados em grupos com base
+                             em uma ou mais colunas.</p>
+                      </div>
+                </p>
+                <p>
+                    <div class="text-box">
+                    <p>Mostra tudo junto na mesma linha para cada tipo de embalagem.
+                    No SQL, existem cinco funções de agregação principais, amplamente utilizadas em todos os bancos de dados.
+                    Cada uma delas executa um tipo específico de operação sobre os conjuntos de dados e são fundamentais para análises e resumos de informações.</p>
+                    </div>
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td colspan="2">
+                 <img src="img/tabela.png" alt "tabela" width="950" align="center">
+            </td>
+        </tr>
+
+    </table> 
+
+
+    <table border="0" width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h1>COUNT</h1>
+                <p>Esta função é usada para contar o número de linhas em uma coluna específica ou no conjunto de resultados.
+                    É útil para saber quantos registros atendem a um certo critério.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="300">
+                <img src="img/count.jpg" alt="Exemplo da função COUNT" width="800">
+            </td>
+
+            <tr>
+                <td colspan="1">
+                <ul>
+                    <div class="text-box">
+                        <p><strong>SELECT embalagem</strong> escolhe a coluna embalagem
+                            <br>
+                            <br><strong>COUNT(*) as contagem →</strong>conta quantos registros existem para cada tipo de embalagem e dá o nome de contagem a essa coluna.</br>
+                            <br>
+                            <strong>FROM tabela_de_produtos → </strong> diz de qual tabela os dados estão sendo retirados.
+                            <br>
+                            <br><strong>GROUP BY embalagem → </strong> agrupa os resultados de acordo com cada tipo de embalagem.</br></p>
+                      </div>
+                    
+                </ul>
+            </td>
+            <tr>
+        </tr>
+    </table>
+
+  
+    <table border="0" width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h1>SUM</h1>
+                <p>Como o nome sugere, a função SUM é usada para somar valores de uma coluna.
+                    É extremamente útil em situações financeiras, como calcular o total de vendas ou despesas.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="300">
+                <img src="img/sum.jpg" alt="Exemplo da função SUM" width="800">
+            </td>
+            <tr>
+            <td colspan="2">
+                <ul>
+                    <div class="text-box">
+                        <p>O comando SUM retorna a soma dos valores do campo preço por embalagem.</p>
+                      </div>
+               </ul>
+            </td>
+            </tr>
+        </tr>
+    </table>
+
+
+    <table border="0" width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h1>AVG</h1>
+                <p>AVG (Média): Esta função calcula a média dos valores em uma coluna. 
+                É amplamente utilizada em análises estatísticas, como encontrar a média de preços, idades ou qualquer outro valor numérico.
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="300">
+                <img src="img/avg.jpg" alt="Exemplo da função AVG" width="800">
+            </td>
+
+            <tr>
+            <td colspan="2">
+                <ul>
+                    <div class="text-box">
+                        <p><strong>SELECT embalagem</strong> escolhe a coluna embalagem 
+                            <br>
+                            <br><strong>AVG(preço) as média →</strong>calcula a média aritmética dos preços dos produtos daquele tipo de embalagem e dá o nome de média à coluna.</br>
+                            <br>
+                            <strong>FROM tabela_de_produtos → </strong>  indica de onde virão os dados.
+                            <br>
+                            <br><strong>GROUP BY embalagem → </strong> agrupa os registros por embalagem, para que a média seja calculada para cada grupo. <br>  </p>              
+                      </div>
+                </ul>
+            </td>
+            </tr>
+        </tr>
+    </table>
+
+    <table border="0" width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h1>MAX e MIN: </h1>
+                <p>Estas funções são usadas para encontrar o valor máximo e mínimo em uma coluna, respectivamente. 
+                    São importantes para análises onde você precisa identificar os extremos, 
+                    como o produto mais caro ou mais barato, por exemplo.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="300">
+                <img src="img/max_min.jpg" alt="Exemplo da função MAX E MIN" width="800">
+            </td>
+
+            <tr>
+            <td>
+                <ul>
+                    <div class="text-box">
+                        <p>Ele agrupa os registros por embalagem (GROUP BY embalagem);
+                            <br>
+                            <br> Dentro de cada grupo, busca o maior valor de preço (MAX(preço) as Máximo), e também o menor valor de preço (MIN(preço) as Mínimo);</br>
+                            <br>
+                            Mostra tudo junto na mesma linha para cada tipo de embalagem.</p>
+                      </div>
+                </ul>
+            </td>
+            </tr>
+<hr>
+            <tr>
+                <td>
+                    <a href="index04.html"  class="voltar-btn">
+                        <button>Voltar</button>
+                    
+                    </a>
+                </td>
+            </tr>
+ 
+</table>
+
+</body>
+</html>
+
+
+

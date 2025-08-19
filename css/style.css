@@ -1,0 +1,124 @@
+@layer demo {
+    .highlighted-text-shadow {
+      text-shadow:
+        0 .15ch 15px var(--shadow),
+        0 -2px 0 var(--highlight);
+    }
+  
+ 
+    .text-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 1.2rem;
+      padding: 2rem 3rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      max-width: 900px;
+      margin: auto;
+    }
+  }
+  
+  @layer demo.support {
+    :root {
+      --shadow: rgba(0, 0, 0, 0.6);
+      --highlight: #ffffff;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+    html, body {
+        height: 100%;
+        background-color: #0b1d51; 
+        color: #ffffff;
+        font-family: "Geneva", sans-serif;
+      
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        justify-content: flex-start; 
+        padding: 40px 20px;
+      }
+  
+    h1 {
+      font-size: 5rem; 
+      color: #ffd700;
+      text-shadow: 3px 3px 6px #000000;
+      margin-bottom: 1rem;
+    }
+  
+    h2, h3 {
+      font-size: 2.5rem;
+      color: #ffd700;
+      text-shadow: 2px 2px 5px #000000;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      color: #e0e0e0;
+      margin-bottom: 1rem;
+      line-height: 1.8;
+      font-family: "Avantgarde", "TeX Gyre Adventor", "URW Gothic L", sans-serif;
+    }
+  
+    b {
+      color: #ffcc00;
+    }
+  
+    mark {
+      background-color: #ff4500;
+      color: white;
+      padding: 3px 6px;
+      border-radius: 6px;
+    }
+  
+    .exemplo {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      font-family: "Courier New", monospace;
+      width: 85%;
+      font-size: 1.2rem;
+      text-align: left;
+    }
+  
+    img {
+      margin: 15px 0;
+      border: 3px solid white;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+  }
+
+  .voltar-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0b1d51; 
+    background-color: #ffd700; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .voltar-btn:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    font-family: Arial, Helvetica, sans-serif
+  }
+  
+  .voltar-btn:active {
+    transform: scale(0.98);
+  }
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DescomplicaSQL</title>
+
+</head>
+<body>
+    <table border="0 " width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h1>
+                DCL – Linguagem de Controle de Dados 
+                </h1>
+            </td>
+        </tr>
+    </table>
+    <table border="0 " width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h2>O que é a DCL?</h2>
+                <p>
+                    A DCL, ou Data Control Language, é a parte da linguagem SQL que permite <strong>gerenciar as permissões</strong> e o <strong>acesso aos dados</strong> e objetos
+                    dentro do banco de dados. Ela serve para proteger os dados, garantindo que somente pessoas autorizadas possam visualizá-los, modificá-los 
+                    ou realizar certas ações.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table border="0 " width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h2>
+                Códigos básicos:
+                </h2>      
+            <ul>
+            <strong><li>🔑 GRANT</li></strong>
+                <p> O comando GRANT é utilizado para conceder permissões específicas a um usuário ou grupo de usuários (também chamados de "roles" em sistemas mais complexos).
+                Por exemplo, você pode permitir que um usuário possa ler os dados de uma tabela, mas não modificá-los.
+                </p>
+
+            <strong><li>🔒 REVOKE</li></strong>
+                <p> O comando REVOKE faz exatamente o oposto do GRANT, ou seja ele retira permissões que haviam sido previamente concedidas a um usuário.
+                </p>
+
+            <strong><li>🚫 DENY</li></strong>
+            <p> Em outros sistemas de gerenciamento de banco de dados, como o <i>SQL Server</i>, existe o comando <i>DENY</i>, que serve para negar explicitamente uma permissão, mesmo que o 
+                usuário tenha recebido essa permissão de outro lugar. No entanto, o <i>MySQL</i> não implementa esse comando.
+            </p>
+        </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table border="0 " width="900" align="center">
+        <tr>
+            <td colspan="2">
+        <h2>
+            Exemplos de estrutura
+        </h2>
+        <p>GRANT:</p>
+        <img src="img/teste3.png" alt="Exemplo do código GRANT" title="Exemplo"/>
+
+        <p>REVOKE:</p>
+        <img src="img/teste2.png" alt="Exemplo do código REVOKE" title="Exemplo"/>
+
+        <p>DENY:</p>
+        <img src="img/teste1.png" alt="Exemplo do código DENY" title="Exemplo"/>
+    </td>
+    </tr>
+    <table border="0 " width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h2>Tipos de dados MySQL</h2>
+                <center>
+                <ul>
+                    <li style="font-size: x-large;">1. Numéricos</li>
+                    <p> NT / INTEGER → números inteiros (ex: 1, 200, -50).  </p>
+                    <p> TINYINT → inteiros pequenos (–128 a 127).</p>
+                        <p> BIGINT → inteiros grandes (até 9.22 quatrilhões).</p>
+                            <p> DECIMAL / NUMERIC → números com casas decimais exatas (ex: dinheiro).</p>
+                                <p> FLOAT / DOUBLE → números decimais aproximados (ex: medições).</p>
+                    <li style="font-size: x-large; ">2. Texto (Strings)</li>
+                    <p> CHAR(n) → texto fixo (sempre ocupa n caracteres).</p>
+                    <p> VARCHAR(n) → texto variável (até n caracteres).</p>
+                    <p
+                                   
+                        
+                    
+                </ul>
+                </center>
+            </td>
+        </tr>
+<hr>
+        <tr>
+            <td>
+                <a href="index03.html">
+                    <button>Voltar</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="index05.html">
+                    <button>Próxima Página</button>
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
