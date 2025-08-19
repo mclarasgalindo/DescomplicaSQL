@@ -100,25 +100,28 @@
     display: inline-block;
     padding: 14px 28px;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: bolder;
     color: #0b1d51; 
     background-color: #ffd700; 
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .voltar-btn:hover {
     background-color: #ffcc00;
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    font-family: Arial, Helvetica, sans-serif
+    
   }
   
   .voltar-btn:active {
     transform: scale(0.98);
   }
+
+
 
