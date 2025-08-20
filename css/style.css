@@ -1,4 +1,12 @@
  
+  @layer demo {
+    .highlighted-text-shadow {
+      text-shadow:
+        0 .15ch 15px var(--shadow),
+        0 -2px 0 var(--highlight);
+    }
+  
+ 
     .text-box {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -132,5 +140,33 @@
   .voltar-btn:active {
     transform: scale(0.98);
   }
+
+.container-topicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.cartao-topico {
+    background: #1e2a47;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease-in-out;
+    font-size: 15px;
+}
+
+.cartao-topico:hover {
+    transform: scale(1.05);
+    background: #273657;
+}
+
+.titulo-topico {
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: underline;
+}
 
 
