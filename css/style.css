@@ -1,10 +1,3 @@
-@layer demo {
-    .highlighted-text-shadow {
-      text-shadow:
-        0 .15ch 15px var(--shadow),
-        0 -2px 0 var(--highlight);
-    }
-  
  
     .text-box {
       background: rgba(255, 255, 255, 0.05);
@@ -17,6 +10,23 @@
       margin: auto;
     }
   }
+  .text-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.2rem;
+  padding: 2rem 3rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  margin: auto;
+
+  transition: all 0.3s ease; 
+}
+
+.text-box:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5); 
+}
   
   @layer demo.support {
     :root {
@@ -122,6 +132,5 @@
   .voltar-btn:active {
     transform: scale(0.98);
   }
-
 
 
