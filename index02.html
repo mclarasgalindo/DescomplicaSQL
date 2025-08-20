@@ -3,181 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> DescomplicaSQL</title>
+    <title>DescomplicaSQL</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
 </head>
-<style>
-    
+<body> 
+    <table border="0" width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h1>O que é DML?</h1>
+                <p>
+                    São os comandos SQL usados para trabalhar diretamente com os dados dentro de tabelas 
+                    <mark>(inserir, consultar, atualizar e remover)</mark>.
+                </p>
+                <p>👉 O DML mexe nos dados que estão dentro dessas tabelas.</p>
+            </td>
+        </tr>
+    </table>
 
-</style>
+    <table border="0" width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h2>🔹 Principais comandos do DML</h2>
 
+                <p>1️⃣ <b>SELECT — Buscar dados</b></p>
+                <img src="img/1.png" width="400" height="200" alt="Exemplo SELECT">
+                <p><b>SELECT →</b> quais colunas você vai visualizar.</p>
+                <p><b>FROM →</b> de qual tabela.</p>
+                <p><b>WHERE →</b> filtra apenas as linhas que você quer ver.</p>
 
-<body align="center"> 
-     
+                <p>2️⃣ <b>INSERT — Inserir dados</b><br>
+                Usado para adicionar novas linhas em uma tabela.</p>
+                <img src="img/2.png" width="400" height="200" alt="Exemplo INSERT">
+                <p><b>INSERT INTO →</b> tabela onde vai colocar os dados.</p>
+                <p><b>(colunas) →</b> define onde cada valor vai entrar.</p>
+                <p><b>VALUES →</b> os valores que você quer inserir.</p>
 
-    
-    
-        <h1> O que é DML?
-          
-        </h1 >
-       
-        <p >
+                <p>3️⃣ <b>UPDATE — Atualizar dados</b><br>
+                Usado para alterar informações existentes.</p>
+                <img src="img/3.png" width="400" height="200" alt="Exemplo UPDATE">
+                <p><b>UPDATE →</b> tabela que será modificada.</p>
+                <p><b>SET →</b> coluna que vai mudar e o novo valor.</p>
+                <p><b>WHERE →</b> limita quais linhas serão alteradas.</p>
 
-               
-            São os comandos SQL usados para trabalhar diretamente com os dados dentro de tabelas <mark>(inserir, consultar, atualizar e remover)</mark>
-        </p>
+                <p>4️⃣ <b>DELETE — Excluir dados</b><br>
+                Usado para remover registros.</p>
+                <img src="img/4.png" width="400" height="200" alt="Exemplo DELETE">
+                <p><b>DELETE FROM →</b> tabela de onde vai remover os dados.</p>
+                <p><b>WHERE →</b> quais linhas apagar.</p>
+            </td>
+        </tr>
+    </table>
 
-        <p>
-            👉 o DML mexe nos dados que estão dentro dessas tabelas.
+    <table border="0" width="900" align="center">
+        <tr>
+            <td colspan="2">
+                <h3>⚠️ Importante:</h3>
+                <p>
+                    Todos os comandos do DML afetam linhas de tabelas 
+                    <mark>(não a estrutura da tabela em si)</mark>.
+                </p>
+                <p>
+                    Normalmente, eles rodam dentro de transações: você pode dar 
+                    <b>COMMIT</b> para confirmar ou <b>ROLLBACK</b> para desfazer.
+                </p>
+                <p><b>Sem um WHERE, UPDATE e DELETE podem afetar toda a tabela! 😱</b></p>
+            </td>
+        </tr>
+    </table>
 
-        </p>
+    <hr>
 
-        <h2>
-            🔹 Principais comandos do DML
-
-
-        </h2>
-        
-        <p>
-            1️⃣ SELECT — Buscar dados
-
-        </p>
-        <p>
-            <img src="img/1.png" width="400" height="200" 
-
-        </p>
-
-
-       
-       <p>
-
-        <b>
-            SELECT → Sera as colunas que você vai visualizar.
-
-        </b>
-
-       </p>
-       <p>
-        <b>
-            FROM → de qual tabela.
-
-        </b>
-        
-       </p>
-       <p>
-        <b>
-            WHERE → filtra apenas as linhas que você quer ver. 
-        </b>
-        
-       </p>
-
-
-
-
-        <p>
-            2️⃣ INSERT → Inserir dados
-            Usado para adicionar novas linhas em uma tabela.
-
-
-        </p>
-        <img src="img/2.png" width="400" height="200" 
-        <p>
-            <p>
-                <b>
-                    INSERT INTO → tabela onde vai colocar os dados.
-                </b>
-                
-            </p>
-            <p>
-                <b>
-                    (colunas) → define onde cada valor vai entrar.
-                </b>
-                
-            </p>
-            <p>
-                <b>
-                    VALUES → os valores que você quer inserir.
-                </b>
-                
-            </p>
-            3️⃣ UPDATE → Atualizar dados
-            Usado para alterar informações existentes.
-
-
-        </p>
-        <img src="img/3.png" width="400" height="200"
-        
-            
-
-        </p>
-        <p>
-            <b>
-                UPDATE → tabela que será modificada.
-            </b>
-        </p>
-        <p>
-            <b>
-                SET → coluna que vai mudar e o novo valor.
-            </b>
-        </p>
-        <p>
-            <b>
-                WHERE → limita quais linhas serão alteradas.
-            </b>
-        </p>
-    
-           
-          
-        4️⃣ DELETE → Excluir dados
-            Usado para remover registros.
-        </p>
-        <img src="img/4.png" width="400" height="200">
-
-
-        <p>
-            <b>
-                DELETE FROM → tabela de onde vai remover os dados.
-            </b>
-        </p>
-        <p>
-            <b>
-                WHERE → quais linhas apagar.
-            </b>
-        </p>
-
-        <h3>
-
-            ⚠️ Importante:
-
-
-        </h3>
-        <p>
-            Todos os comandos do DML afetam linhas de tabelas <mark>(não a estrutura da tabela em si)</mark>
-        </p>
-        <p>
-            Normalmente, eles rodam dentro de transações: você pode dar COMMIT para confirmar ou ROLLBACK para desfazer.
-        </p>
-
-        <p>
-            Sem um WHERE, UPDATE e DELETE podem afetar toda a tabela! 😱
-        </p>
-<hr>  
+    <table border="0" width="900" align="center">
         <tr>
             <td>
                 <a href="index.html">
                     <button>Voltar</button>
                 </a>
             </td>
-        </tr>
-
-        <tr>
-            <td>
+            <td align="right">
                 <a href="index03.html">
                     <button>Próxima Página</button>
                 </a>
             </td>
         </tr>
+    </table>
+</body>
+</html>
 
 </body>
+
 </html>
