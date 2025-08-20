@@ -5,95 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DescomplicaSQL</title>
-
 </head>
 <body>
-    <table border="0 " width="900" align="center">
+    <table border="0" width="900" align="center">
         <tr>
             <td colspan="2">
-                <h1>
-                DCL – Linguagem de Controle de Dados 
-                </h1>
+                <h1>DCL – Linguagem de Controle de Dados</h1>
             </td>
         </tr>
-    </table>
-    <table border="0 " width="900" align="center">
+
         <tr>
             <td colspan="2">
                 <h2>O que é a DCL?</h2>
-                <p>
-                    A DCL, ou Data Control Language, é a parte da linguagem SQL que permite <strong>gerenciar as permissões</strong> e o <strong>acesso aos dados</strong> e objetos
-                    dentro do banco de dados. Ela serve para proteger os dados, garantindo que somente pessoas autorizadas possam visualizá-los, modificá-los 
-                    ou realizar certas ações.
-                </p>
+                <div class="text-box">
+                    <p>
+                        A DCL, ou <b>Data Control Language</b>, é a parte da linguagem SQL que permite 
+                        <u>gerenciar as permissões</u> e o <u>acesso aos dados</u> e objetos dentro do banco de dados. 
+                        Ela serve para proteger os dados, garantindo que somente pessoas autorizadas possam 
+                        visualizá-los, modificá-los ou realizar certas ações.
+                    </p>
+                </div>
             </td>
         </tr>
-    </table>
-    <table border="0 " width="900" align="center">
+
         <tr>
             <td colspan="2">
-                <h2>
-                Códigos básicos:
-                </h2>      
-            <ul>
-            <strong><li>🔑 GRANT</li></strong>
-                <p> O comando GRANT é utilizado para conceder permissões específicas a um usuário ou grupo de usuários (também chamados de "roles" em sistemas mais complexos).
-                Por exemplo, você pode permitir que um usuário possa ler os dados de uma tabela, mas não modificá-los.
-                </p>
-
-            <strong><li>🔒 REVOKE</li></strong>
-                <p> O comando REVOKE faz exatamente o oposto do GRANT, ou seja ele retira permissões que haviam sido previamente concedidas a um usuário.
-                </p>
-
-            <strong><li>🚫 DENY</li></strong>
-            <p> Em outros sistemas de gerenciamento de banco de dados, como o <i>SQL Server</i>, existe o comando <i>DENY</i>, que serve para negar explicitamente uma permissão, mesmo que o 
-                usuário tenha recebido essa permissão de outro lugar. No entanto, o <i>MySQL</i> não implementa esse comando.
-            </p>
-        </ul>
+                <h2>Códigos básicos:</h2>
+                <h3><b>🔑 GRANT</b></h3>      
+                <ul>
+                    <div class="text-box">
+                        <p>O comando <b>GRANT</b> é utilizado para conceder permissões específicas a um usuário ou grupo de usuários (também chamados de "roles" em sistemas mais complexos).
+                        <br>Exemplo: permitir que um usuário possa <u>ler</u> os dados de uma tabela, mas não <u>modificá-los</u>.
+                        </p>
+                    </div>
+                  
+                <h3><b>🔑REVOKE</b></h3>   
+                    <div class="text-box">
+                        <p>O comando <b>REVOKE</b> faz exatamente o oposto do GRANT: ele <u>retira permissões</u> que haviam sido previamente concedidas a um usuário.</p>
+                    </div>
+                
+                <h3><b>🚫 DENY</b></h3> 
+                    <div class="text-box">
+                        <p>Em alguns SGBDs como o <i>SQL Server</i>, existe o comando <b>DENY</b>, que serve para <u>negar explicitamente uma permissão</u>, mesmo que o 
+                        usuário a tenha recebido de outro lugar.  
+                        <br><i>Observação:</i> o <b>MySQL</b> não implementa esse comando.</p>
+                    </div>
+                </ul>
             </td>
         </tr>
-    </table>
 
-    <table border="0 " width="900" align="center">
         <tr>
             <td colspan="2">
-        <h2>
-            Exemplos de estrutura
-        </h2>
-        <p>GRANT:</p>
-        <img src="img/teste3.png" alt="Exemplo do código GRANT" title="Exemplo"/>
+                <h2>Exemplos de estrutura</h2>
+                <p><b>GRANT:</b></p>
+                <img src="img/teste3.png" alt="Exemplo do código GRANT" title="Exemplo"/>
 
-        <p>REVOKE:</p>
-        <img src="img/teste2.png" alt="Exemplo do código REVOKE" title="Exemplo"/>
+                <p><b>REVOKE:</b></p>
+                <img src="img/teste2.png" alt="Exemplo do código REVOKE" title="Exemplo"/>
 
-        <p>DENY:</p>
-        <img src="img/teste1.png" alt="Exemplo do código DENY" title="Exemplo"/>
-    </td>
-    </tr>
-    <table border="0 " width="900" align="center">
+                <p><b>DENY:</b></p>
+                <img src="img/teste1.png" alt="Exemplo do código DENY" title="Exemplo"/>
+            </td>
+        </tr>
+
         <tr>
             <td colspan="2">
                 <h2>Tipos de dados MySQL</h2>
-                <center>
                 <ul>
                     <li style="font-size: x-large;">1. Numéricos</li>
-                    <p> NT / INTEGER → números inteiros (ex: 1, 200, -50).  </p>
-                    <p> TINYINT → inteiros pequenos (–128 a 127).</p>
-                        <p> BIGINT → inteiros grandes (até 9.22 quatrilhões).</p>
-                            <p> DECIMAL / NUMERIC → números com casas decimais exatas (ex: dinheiro).</p>
-                                <p> FLOAT / DOUBLE → números decimais aproximados (ex: medições).</p>
-                    <li style="font-size: x-large; ">2. Texto (Strings)</li>
-                    <p> CHAR(n) → texto fixo (sempre ocupa n caracteres).</p>
-                    <p> VARCHAR(n) → texto variável (até n caracteres).</p>
-                    <p
-                                   
-                        
-                    
+                    <div class="text-box">
+                        <p><b>INT / INTEGER →</b> números inteiros (ex: 1, 200, -50).</p>
+                        <p><b>TINYINT →</b> inteiros pequenos (–128 a 127).</p>
+                        <p><b>BIGINT →</b> inteiros grandes (até 9.22 quatrilhões).</p>
+                        <p><b>DECIMAL / NUMERIC →</b> números com casas decimais exatas (ex: dinheiro).</p>
+                        <p><b>FLOAT / DOUBLE →</b> números decimais aproximados (ex: medições).</p>
+                    </div>
+
+                    <li style="font-size: x-large;">2. Texto (Strings)</li>
+                    <div class="text-box">
+                        <p><b>CHAR(n) →</b> texto fixo (sempre ocupa n caracteres).</p>
+                        <p><b>VARCHAR(n) →</b> texto variável (até n caracteres).</p>
+                    </div>
+
+                     <li style="font-size: x-large;">3. Data e Hora</li>
+                        <div class="text-box">
+                            <p><b>DATE →</b> armazena apenas a data (AAAA-MM-DD).</p>
+                            <p><b>DATETIME →</b> armazena data e hora completas (AAAA-MM-DD HH:MM:SS).</p>
+                            <p><b>TIMESTAMP →</b> semelhante ao DATETIME, mas atualiza automaticamente quando o registro é modificado.</p>
+                            <p><b>TIME →</b> armazena apenas a hora (HH:MM:SS).</p>
+                            <p><b>YEAR →</b> armazena apenas o ano (formato AAAA).</p>
+                        </div>
+
+                    <li style="font-size: x-large;">4. Espaciais</li>
+                         <div class="text-box">
+                            <p><b>GEOMETRY →</b> tipo genérico para dados espaciais.</p>
+                            <p><b>POINT →</b> representa uma coordenada (latitude, longitude).</p>
+                            <p><b>LINESTRING →</b> representa uma linha formada por vários pontos.</p>
+                            <p><b>POLYGON →</b> representa uma área delimitada por linhas.</p>
+                        </div>
+
+                     <li style="font-size: x-large;">5. JSON</li>
+                        <div class="text-box">
+                     <p><b>JSON →</b> permite armazenar dados no formato <i>JavaScript Object Notation</i>, útil para estruturas flexíveis e semi-estruturadas.</p>
+                        </div>
                 </ul>
-                </center>
             </td>
         </tr>
-<hr>
+
         <tr>
             <td>
                 <a href="index03.html">
@@ -111,4 +129,6 @@
     </table>
 </body>
 </html>
+
+
 
